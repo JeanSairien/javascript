@@ -7,7 +7,7 @@
     
   </head>
   <body>
-  <script type="text/javascript">
+ <!-- <script type="text/javascript">
   		function numberToRoman(value){
           var result;
          
@@ -45,7 +45,7 @@
 
       </script>-->
 <!-- exo1-->
-<script type="text/javascript">{
+<!--<script type="text/javascript">{
    var name = prompt  ("votre nom","value");
    var first = prompt ("votre prenom","value");
    var ville = prompt ("votre ville", "value");
@@ -59,7 +59,7 @@
 
 </script>-->
 <!--exo2-->
-<script type="text/javascript">{
+<!--<script type="text/javascript">{
    var name = prompt  ("votre nom","value");
    
 
@@ -72,7 +72,7 @@
 
 </script>-->
 <!--exo3-->
-<script type="text/javascript">
+<!--<script type="text/javascript">
   var age = prompt("votre age" , 18);
   if(age<18){
     alert('vous ete mineur');
@@ -83,42 +83,49 @@
     
                 
            
- </script>
+ </script>-->
  
    
 
-<script type="text/javascript">{
+<script type="text/javascript">
    var age = prompt  ("votre age","value");
    var sexe = prompt ("votre sexe","value");
    var ville = prompt ("votre ville", "value");
+   var resultat = result;
 
-   if (sexe=="femme"){
-      alert( 'vous etes une femme ' + 'de ' + age + 'ans '  + 'qui vient de ' + ville);
+   if ((age<18)&&(sexe=="femme")){
+    result( 'vous etes une femme ' + 'mineur' + 'qui vient de ' + ville);
     }
-    else if(sexe=="homme"){
-      alert( 'vous etes un homme ' + 'de ' + age + 'ans '  + 'qui vient de ' + ville);
+  
+  else  {
+    result('vous etes une femme ' + 'majeur' + 'qui vient de ' + ville);
+  }
+   
 
-
+if ((age<18)&&(sexe=="homme")){
+    result( 'vous etes une homme ' + 'mineur' + 'qui vient de ' + ville);
     }
-
-   }
+  
+  else  {
+    result('vous etes une homme ' + 'majeur' + 'qui vient de ' + ville);
+  }
+   
+alert(resultat);
     
-        
 
-
-
-
-
+   
+    
+     
 </script>
 
 
-<script type="text/javascript">{
+<!--<script type="text/javascript">{
    var age = prompt  ("votre age","value");
    var sexe = prompt ("votre sexe","value");
    var origin = prompt ("votre nationalité", "value");
 
    if (sexe=="femme"){
-      alert( 'vous etes une femme ' + 'de ' + age + 'ans '  + 'qui vient de ' + ville);
+      alert( 'vous etes une femme ' + 'de ' + age + 'ans '  + 'qui vient de ' + origin);
     }
     else if(sexe=="homme"){
       alert( 'vous etes un homme ' + 'de ' + age + 'ans '  + 'qui vient de ' + origin);
@@ -134,7 +141,7 @@
 
 
 
-</script>
+</script>-->
 
 
 
