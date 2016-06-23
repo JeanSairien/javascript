@@ -7,43 +7,7 @@
     
   </head>
   <body>
- <!-- <script type="text/javascript">
-  		function numberToRoman(value){
-          var result;
-         
-                  if (value === 3){
-              result = "III";
-              }else if (value===2) {
-              result = "II";
-          }else{
-              result = "I";
-          }            document.write(value + " --- > " + result + "<br/>");
-  }        //numberToRoman(1);
-      numberToRoman(1);
-      numberToRoman(2);
-      numberToRoman(3);
-
-
-      </script>
-      <script type="text/javascript">
-
-      function numberToRoman(value){
-      		var result;
-
-      			if (value === 4){
-      				result=" IV";
-      			
-      			}else if (value === 5) {
-      				result= "V";
-      			}else{
-      				result= "VI";
-      			}     document.write(value + "--- >" + result + "<br/>");
-  }    					//numberToRoman(2)
-  				numberToRoman(4);
-  				numberToRoman(5);
-  				numberToRoman(6);
-
-      </script>-->
+ 
 <!-- exo1-->
 <!--<script type="text/javascript">{
    var name = prompt  ("votre nom","value");
@@ -87,48 +51,78 @@
  
    
 
-<script type="text/javascript">
-   var age = prompt  ("votre age","value");
+<!--<script type="text/javascript">
+   var age = prompt  ("votre age",'value');
    var sexe = prompt ("votre sexe","value");
    var ville = prompt ("votre ville", "value");
-   var resultat = result;
-
-   if ((age<18)&&(sexe=="femme")){
-    result( 'vous etes une femme ' + 'mineur' + 'qui vient de ' + ville);
-    }
+   var result (resultat(age + sexe + ville));
   
-  else  {
-    result('vous etes une femme ' + 'majeur' + 'qui vient de ' + ville);
-  }
-   
 
-if ((age<18)&&(sexe=="homme")){
-    result( 'vous etes une homme ' + 'mineur' + 'qui vient de ' + ville);
+   	if (age<18){
+   		var min = ('mineur');
+   	}
+ 	
+ 	else{
+ 		 var maj = ('majeur'); 
+
+ 	}
+
+
+ 	
+
+/*femme mineur*/
+   	if (sexe=="femme"){
+
+     var result =('vous etes une femme ' + min + ' qui vient de ' + ville);
+    			
     }
-  
-  else  {
-    result('vous etes une homme ' + 'majeur' + 'qui vient de ' + ville);
-  }
+  /*femme majeur*/
+  else {
+     var result =('vous etes une femme ' + maj + ' qui vient de ' + ville);
+	
+  				
+  }				
+
    
+/*homme mineur*/
+  if(sexe=="homme"){
+   var result =('vous etes un homme ' + min + ' qui vient de ' + ville);
+   				
+    }
+/*homme majeur*/  
+  else {
+  	var result =('vous etes un homme ' + maj + ' qui vient de ' + ville);
+  		 
+    			
+  
+   
+  }  
 alert(resultat);
     
-
-   
-    
-     
-</script>
+      
+</script>-->
 
 
-<!--<script type="text/javascript">{
+<script type="text/javascript">{
    var age = prompt  ("votre age","value");
    var sexe = prompt ("votre sexe","value");
    var origin = prompt ("votre nationalité", "value");
 
+   if (age<18){
+   		var min = ('mineur');
+   	}
+ 	
+ 	else{
+ 		 var maj = ('majeur'); 
+
+ 	}
+
+
    if (sexe=="femme"){
-      alert( 'vous etes une femme ' + 'de ' + age + 'ans '  + 'qui vient de ' + origin);
+      alert( 'vous etes une femme ' + 'de ' + age + 'ans ' + 'qui vient de ' + origin);
     }
     else if(sexe=="homme"){
-      alert( 'vous etes un homme ' + 'de ' + age + 'ans '  + 'qui vient de ' + origin);
+      alert( 'vous etes un homme ' + 'de ' + age + 'ans ' + 'qui vient de ' + origin);
 
 
     }
@@ -146,7 +140,7 @@ alert(resultat);
 
 
 
- </script>
+
 
 
   </body>
