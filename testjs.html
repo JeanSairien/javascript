@@ -51,59 +51,71 @@
  
    
 
-<!--<script type="text/javascript">
-   var age = prompt  ("votre age",'value');
-   var sexe = prompt ("votre sexe","value");
-   var ville = prompt ("votre ville", "value");
-   var result (resultat(age + sexe + ville));
+<script type="text/javascript">
+   var age = prompt  ("votre age",'18');
+   var sexe = prompt ("votre sexe","homme");
+   var ville = prompt ("votre ville", "paris");
+   var result ="vous etes un";
   
+	if (sexe=="femme"){
+
+     result = result + 'e';
+    			
+    }
+    result = result + ' ' + sexe ;
+
+
+    
 
    	if (age<18){
-   		var min = ('mineur');
+   		var min = 'mineur';
    	}
  	
  	else{
- 		 var maj = ('majeur'); 
+ 		 var maj = 'majeur'; 
 
- 	}
-
-
+ 		result = result + ' qui vient de ' + ville;
+ 	
+	
+ 	
+}
  	
 
-/*femme mineur*/
+
+/*femme mineur
    	if (sexe=="femme"){
 
-     var result =('vous etes une femme ' + min + ' qui vient de ' + ville);
+     result = sexe + min ;
     			
     }
-  /*femme majeur*/
   else {
-     var result =('vous etes une femme ' + maj + ' qui vient de ' + ville);
+     result = sexe + maj ;
 	
   				
   }				
 
    
-/*homme mineur*/
+   
+/*homme mineur
   if(sexe=="homme"){
-   var result =('vous etes un homme ' + min + ' qui vient de ' + ville);
+   result = sexe + min ;
    				
     }
-/*homme majeur*/  
+/*homme majeur 
   else {
-  	var result =('vous etes un homme ' + maj + ' qui vient de ' + ville);
+  	result = sexe + maj ;
   		 
     			
-  
-   
-  }  
-alert(resultat);
+  }
+   */
+    
+alert(result);
     
       
-</script>-->
+</script>
 
 
-<script type="text/javascript">{
+<!--<script type="text/javascript">{
    var age = prompt  ("votre age","value");
    var sexe = prompt ("votre sexe","value");
    var origin = prompt ("votre nationalité", "value");
