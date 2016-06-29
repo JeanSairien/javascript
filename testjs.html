@@ -51,7 +51,7 @@
  
    
 
-<script type="text/javascript">
+<!--<script type="text/javascript">
    var age = prompt  ("votre age",'18');
    var sexe = prompt ("votre sexe","homme");
    var ville = prompt ("votre ville", "paris");
@@ -68,11 +68,11 @@
     
 
    	if (age<18){
-   		var min = 'mineur';
+   		 age = 'mineur';
    	}
  	
  	else{
- 		 var maj = 'majeur'; 
+ 		  age = 'majeur'; 
 
  		result = result + ' qui vient de ' + ville;
  	
@@ -107,34 +107,34 @@
   		 
     			
   }
-   */
+   
     
 alert(result);
     
       
-</script>
+</script>-->
 
 
-<!--<script type="text/javascript">{
-   var age = prompt  ("votre age","value");
-   var sexe = prompt ("votre sexe","value");
-   var origin = prompt ("votre nationalité", "value");
+<script type="text/javascript">{
+   var age = prompt  ("votre age","18");
+   var sexe = prompt ("votre sexe","homme");
+   var origin = prompt ("votre nationalité", "france");
 
    if (age<18){
-   		var min = ('mineur');
+   		age = ('mineur');
    	}
  	
  	else{
- 		 var maj = ('majeur'); 
+ 		 age = ('majeur'); 
 
  	}
 
 
    if (sexe=="femme"){
-      alert( 'vous etes une femme ' + 'de ' + age + 'ans ' + 'qui vient de ' + origin);
+      alert( 'vous etes une femme ' + age + ' qui vient de ' + origin);
     }
     else if(sexe=="homme"){
-      alert( 'vous etes un homme ' + 'de ' + age + 'ans ' + 'qui vient de ' + origin);
+      alert( 'vous etes un homme ' + age + ' qui vient de ' + origin);
 
 
     }
@@ -147,7 +147,7 @@ alert(result);
 
 
 
-</script>-->
+</script>
 
 
 
