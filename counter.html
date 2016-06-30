@@ -5,27 +5,37 @@
     
 </head>
 
-<body>
+<body background-color="gray">
+
+	<header>
+	<center>	
+	<h1>cookie counter clicks</h1>
+	</center>
+	</header>
+	<center>
     <script type="text/javascript">
     var clicks = 0;
     function onClick() {
         clicks += 1;
         document.getElementById("clicks").innerHTML = clicks;
-    };
+    	}
+    function multiplier(){
+    if (clicks >= 50){
+    	
+    	clicks = 50 * 2;
+    	}
+
+    else{
+
+    	Clicks = clicks;
+    	}
+	}
     </script>
-    <button type="button" onClick="onClick()">Click me</button>
+    <img height="150px" width="150px" src="cookie.png" onClick="onClick()"/>
     <p>Clicks: <a id="clicks">0</a></p>
+	</center>
 
 
-<!--<body>
-    <script type="text/javascript">
-    var clicks = 0;
-    function onClick() {
-        clicks += 1;
-        document.getElementById("clicks").innerHTML = clicks;
-    };
-    </script>
-    <button type="button" onClick="onClick()">Click me</button>
-    <p>Clicks: <a id="clicks">0</a></p>-->
+
 
 </body></html>
