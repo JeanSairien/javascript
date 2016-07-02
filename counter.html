@@ -8,8 +8,8 @@
 
 
 <body>
-<button type="button" onClick="onClick('clicks')" mutli="multi('clicks')">Click me</button>
-    <p>Clicks: <a id="clicks">0</a></p>-->
+
+ 
 
 
 <body background-color="gray">
@@ -25,30 +25,25 @@
     function onClick() {
         clicks += 1;
         document.getElementById("clicks").innerHTML = clicks;
+        
+	var mult = if(clicks >= 10){
+			 clicks += 2;
 
+		console.log('clique');
+		}
+
+		
     };
     
-	function mutli(clicks){ 
-		if(clicks=50){
-		 var click = clicks*2;
-
-		}
-
-		else{
-
-			alert('vous navez pas le nivo requis');
-
-		}
-
-
-		}
-    	
+		
    </script>
     
 
 
-    <img height="150px" width="150px" src="cookie.png" onClick="onClick()"/>
+    <img height="150px" width="150px" src="cookie.png" onClick="onClick('clicks')"/>
     <p>Clicks: <a id="clicks">0</a></p>
+
+    <button 
 	</center>
 
 
