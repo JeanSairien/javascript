@@ -1,0 +1,52 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta charset="UTF-8">
+    <title>Space Clicker</title>
+    
+</head>
+
+
+<body>
+
+ 
+
+
+<body background-color="gray">
+
+	<header>
+	<center>	
+	<h1>cookie counter clicks</h1>
+	</center>
+	</header>
+	<center>
+<script type="text/javascript">
+    var clicks = 0;
+    function onClick() {
+        clicks += 1;
+        document.getElementById("clicks").innerHTML = clicks;
+        };
+
+function mile() {
+		if(clicks >= 10){
+			 clicks += 2;
+		     console.log('clique');
+		}
+
+		
+    };
+    
+		
+   </script>
+    
+   <button type="button" mile="mile('clicks')"></button>
+
+    <img height="150px" width="150px" src="cookie.png" onClick="onClick('clicks')"/>
+    <p>Clicks: <a id="clicks">0</a></p>
+	</center>
+
+
+
+
+
+</body></html>
