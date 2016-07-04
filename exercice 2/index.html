@@ -6,9 +6,20 @@
 </head>
 <body>
   <form>
-    <label for="motdepasse">Votre mot de passe : </label><input type="text" name="motdepasse" value="" id="motdepasse" />
-    <label for="confirmation">Confirmez : </label><input type="text" name="confirmation" value="" id="confirmation" />
-    <button type="button" name="button" >Vérification</button>
+    <label for="motdepasse">Votre mot de passe : </label><input type="text" name="motdepasse" onkeypress="addBorder()" value="" id="motdepasse" />
+    <label for="confirmation">Confirmez : </label><input type="text" name="confirmation" onkeypress="addBorder()" value="" id="confirmation" />
+    <button type="button" name="button"  >Vérification</button>
   </form>
 </body>
+<script>
+	function addBorder() {
+		var mdp = document.getElementById("motdepasse");
+		var conf = document.getElementById("confirmation");
+		if ( conf.value !== mdp.value ) {
+			mdp.style.border = "3px solid red";
+		} else {
+			mdp.style.border = "3px solid green";	
+		}
+	}
+</script>	
 </html>
