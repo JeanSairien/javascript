@@ -29,22 +29,26 @@
 	
 
 
-/*var size;
+var size;
 	function tailleString(chaine){
-	var Taille = "string de plusieur caracteres ";
+	var Taille = "string de plusieur caracteres skduhfcneocnhieusn";
  	size = Taille.length;
 }
- 		/*console.log(size);
-
+tailleString()
+ 		/*document.getElementById("kod").innerHTML=size;*/
+ 		console.log(size);
 
 	
- 		/*document.getElementById("kod").innerHTML = size;*/
-	
- 		
-	
-
-
 };
+
+
+function afficherCar(){
+	var chaine = 'OUlalalala ca fonctionne on dirait ';
+	var result = chaine, 4;
+	return(result);
+
+	alert(result)
+}
 
 
 
